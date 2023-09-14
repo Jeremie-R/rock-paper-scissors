@@ -1,4 +1,4 @@
-console.log(`script start`)
+
 
 // get user input for the game
 
@@ -6,7 +6,7 @@ document.getElementById('textGameButton').addEventListener('click', textGame);
 
 function textGame() {
 
-    console.log('button clicked')
+    console.log('text Game clicked')
 
     userInput = userTextInput();
     
@@ -31,6 +31,11 @@ function userTextInput() {
     // get an normalise user input to r,p or s
     let userInput = prompt("Rock, Papper or Scissor ?");
     userInput = userInput.toLocaleLowerCase().charAt(0);
+
+    if (userInput !== "r" || "p" || "s" ) {
+        alert("Sorry i didn't get that, try again")
+        return userInput;
+    }
 
     console.log("user input "+userInput);
 
