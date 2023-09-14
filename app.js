@@ -14,7 +14,14 @@ function textGame() {
     
     winner = defineWinner(userInput, computerChoice);
 
-    console.log("winner is " + winner);
+    console.log("Game result:" + winner);
+
+    if (winner == "tie") {
+        
+        alert("It's a tie")
+    } else {
+        alert("Winner is the "+ winner)
+    }
 
 
 }
@@ -25,7 +32,7 @@ function userTextInput() {
     let userInput = prompt("Rock, Papper or Scissor ?");
     userInput = userInput.toLocaleLowerCase().charAt(0);
 
-    console.log(userInput);
+    console.log("user input "+userInput);
 
     return userInput;
 }
@@ -47,15 +54,15 @@ function computerInput() {
 
 // define who wins
 
-function defineWinner (a,b) {
+function defineWinner (human,computer) {
 
-    if (a == b) {
+    if (human == computer) {
         return "tie"
     }
-    if ( (a == "r" && b == "s") ||  (a == "p" && b == "r") || (a == "s" && b == "p")) {
-        return "a"
+    if ( (human == "r" && computer == "s") ||  (human == "p" && computer == "r") || (human == "s" && computer == "p")) {
+        return "human"
     } else {
-        return "b"
+        return "computer"
     }
 
 }
