@@ -12,12 +12,58 @@
     <h1>Rock, Paper, Scissor</h1>
 
     <!-- section for the selector human and computer -->
-    <button type="button" id="textGameButton">start</button>
+     <div class="gameselect">
+
+         <!-- human -->
+        <div class="playercard">
+            <div class="playertitle">
+                <h3>Human</h3>
+                <button type="button" id="textGameButton">✍️</button>
+            </div>
+            <div class="playercardselector">
+                <div class="selector, human" id="humanClickR"><p>⛰️</p></div>
+                <div class="selector, human" id="humanClickP"><p>🗒️</p></div>
+                <div class="selector, human" id="humanClickS"><p>✂️</p></div>
+            </div>
+        </div>
+
+         <!-- computer -->
+         <div class="playercard">
+            <div class="playertitle">
+                <h3>Computer</h3>
+                
+            </div>
+            <div class="playercardselector">
+                <div class="selector, computer" id="cumputerR"><p>⛰️</p></div>
+                <div class="selector, computer" id="cumputerP"></div><p>🗒️</p></div>
+                <div class="selector, computer" id="cumputerS"></div><p>✂️</p></div>
+            </div>
+        </div>
+    </div>
 
     <!-- section to show the resutl of game -->
+    <div class="gameshow">
+        <h2 id="result"></h2>
+
+        <div class="pointsection">
+            <p id="humanScore">0</p>
+
+            <div class="resutlhighlight">
+                <div class="highlight" id="humanHighlight"><p id="humanChoice"></p></div>
+                <div class="highlight" id="computerHighlight"><p id="ComputerCHoice"></p></div>
+
+            </div>
+
+            <p id="computerScore">0</p>
+        </div>
+
+    </div>
+
 
     <!-- section for history -->
-    
+    <div class="history">
+
+    </div>
     
     <script type="text/javascript" src="./app.js"></script>
 
