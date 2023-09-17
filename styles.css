@@ -1,3 +1,11 @@
+:root {
+    --work-black: #333022;
+    --human-ligh: #D5EFFA;
+    --human-main: #69C7F2;
+    --computer-light: #DFDEF6;
+    --computer-main: #C1BFFA;
+}
+
 * {
     font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -11,3 +19,42 @@ body {
     gap: 48px;
     margin: 48px, 24px, 48px, 24px;
 }
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gameselect {
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.playercard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    border: 1px solid var(--work-black);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 320px;
+
+}
+
