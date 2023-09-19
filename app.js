@@ -32,14 +32,13 @@ function userTextInput() {
     let userInput = prompt("Rock, Papper or Scissor ?");
     userInput = userInput.toLocaleLowerCase().charAt(0);
 
-    if (userInput !== "r" || "p" || "s" ) {
+    if (userInput == "r" || userInput == "p" || userInput == "s" ) {
+        console.log("user input "+userInput);
+        return userInput;
+    }else {
         alert("Sorry i didn't get that, try again")
         return userInput;
     }
-
-    console.log("user input "+userInput);
-
-    return userInput;
 }
 
 

@@ -8,7 +8,7 @@
 
 * {
     font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    color: var(--work-black);
 }
 
 body {
@@ -41,7 +41,8 @@ h3 {
     width: 100%;
     max-width: 1024px;
     justify-content: space-between;
-    background-color: aqua;
+    
+    gap: 24px;
 }
 
 .playercard {
@@ -56,5 +57,29 @@ h3 {
     width: 100%;
     max-width: 320px;
 
+}
+
+.playertitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-rule-color: #C1BFFA;
+    width: 100%;
+    gap: 8px;
+}
+
+button {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid var(--work-black);
+    border-radius: 32px;
+}
+button:hover {
+    background-color: var(--human-ligh);
+    border-color: var(--human-main);
 }
 
