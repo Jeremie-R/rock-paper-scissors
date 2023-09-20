@@ -77,9 +77,36 @@ button {
     background: white;
     border: 1px solid var(--work-black);
     border-radius: 32px;
+    cursor: pointer;
 }
 button:hover {
     background-color: var(--human-ligh);
     border-color: var(--human-main);
 }
 
+.playercardselector {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selector {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--work-black);
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector p{
+    font-size: 24px;
+}
+
+.human:hover {
+    background-color: var(--human-ligh);
+    border-color: var(--human-main);
+    cursor: pointer;
+}
