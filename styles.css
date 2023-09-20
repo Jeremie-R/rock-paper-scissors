@@ -210,3 +210,19 @@ button:hover .tooltip {
     display: flex;
     
 }
+
+@media (max-width: 700px) {
+    
+    .gameselect {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 90%;
+        
+    }
+    
+
+
+  }
+
