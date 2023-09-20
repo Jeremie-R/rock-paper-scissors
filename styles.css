@@ -130,3 +130,7 @@ button:hover .tooltip {
     border-color: var(--human-main);
     cursor: pointer;
 }
+
+.computer:hover {
+    cursor: not-allowed;
+}
