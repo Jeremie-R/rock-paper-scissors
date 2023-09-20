@@ -84,6 +84,22 @@ button:hover {
     border-color: var(--human-main);
 }
 
+
+.tooltip {
+    visibility: hidden;
+    color: white;
+    background-color: var(--work-black);
+    padding: 12px 4px 12px 4px;
+    border-radius: 4px;
+    position: absolute;
+    
+}
+
+button:hover .tooltiptext {
+    visibility: visible;
+    top: 32px;
+}
+
 .playercardselector {
     display: flex;
     width: 100%;
