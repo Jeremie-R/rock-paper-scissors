@@ -96,12 +96,18 @@ button:hover {
     z-index: 90;
     position: absolute;
     width: 80px;
+    opacity: 0;
+    transition: 0s;
+    text-align: center;
+    font-size: 16px;
     
 }
 
 button:hover .tooltip {
     visibility: visible;
     top: 36px;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .playercardselector {
@@ -123,6 +129,7 @@ button:hover .tooltip {
 
 .selector p{
     font-size: 24px;
+    position:relative;
 }
 
 .human:hover {
@@ -131,6 +138,17 @@ button:hover .tooltip {
     cursor: pointer;
 }
 
+.human:hover .tooltip {
+    visibility: visible;
+    font-size: 16px;
+    top: 64px;
+    left: -40px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
 .computer:hover {
     cursor: not-allowed;
 }
+
