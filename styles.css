@@ -78,6 +78,8 @@ button {
     border: 1px solid var(--work-black);
     border-radius: 32px;
     cursor: pointer;
+    gap: 0px;
+    position:relative;
 }
 button:hover {
     background-color: var(--human-ligh);
@@ -89,15 +91,17 @@ button:hover {
     visibility: hidden;
     color: white;
     background-color: var(--work-black);
-    padding: 12px 4px 12px 4px;
+    padding: 8px 8px;
     border-radius: 4px;
+    z-index: 90;
     position: absolute;
+    width: 80px;
     
 }
 
-button:hover .tooltiptext {
+button:hover .tooltip {
     visibility: visible;
-    top: 32px;
+    top: 36px;
 }
 
 .playercardselector {
