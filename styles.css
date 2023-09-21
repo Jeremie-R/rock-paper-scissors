@@ -41,7 +41,7 @@ h3 {
     width: 100%;
     max-width: 1024px;
     justify-content: space-between;
-    
+    align-items: center;
     gap: 24px;
 }
 
@@ -187,13 +187,6 @@ button:hover .tooltip {
     font-weight: 700;
 }
 
-#humanScore {
-    color: var(--human-main);
-}
-
-#computerScore {
-    color: var(--computer-main);
-}
 
 
 .history {
@@ -211,7 +204,7 @@ button:hover .tooltip {
     
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
     
     .gameselect {
         flex-direction: column;

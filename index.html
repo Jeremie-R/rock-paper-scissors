@@ -17,7 +17,8 @@
          <!-- human -->
         <div class="playercard">
             <div class="playertitle">
-                <h3>Human</h3>
+                <h3>Human: </h3>
+                <p id="humanScore">0</p>
                 <button type="button" id="textGameButton">✍️ <span class="tooltip">Text game</span> </button>
             </div>
             <div class="playercardselector">
@@ -27,11 +28,13 @@
             </div>
         </div>
 
+        <h2 id="result">waiting for you</h2>
+
          <!-- computer -->
          <div class="playercard">
             <div class="playertitle">
-                <h3>Computer</h3>
-                
+                <h3>Computer: </h3>
+                <p id="computerScore">0</p>
             </div>
             <div class="playercardselector">
                 <div class="selector computer" id="computerR"><p>⛰️</p></div>
@@ -39,24 +42,6 @@
                 <div class="selector computer" id="computerS"><p>✂️</p></div>
             </div>
         </div>
-    </div>
-
-    <!-- section to show the resutl of game -->
-    <div class="gameshow">
-        <h2 id="result">Choose to start</h2>
-
-        <div class="pointsection">
-            <p id="humanScore">0</p>
-
-            <div class="resulthighlight">
-                <div class="highlight" id="humanHighlight"><p id="humanChoice"></p></div>
-                <div class="highlight" id="computerHighlight"><p id="ComputerCHoice"></p></div>
-
-            </div>
-
-            <p id="computerScore">0</p>
-        </div>
-
     </div>
 
 
