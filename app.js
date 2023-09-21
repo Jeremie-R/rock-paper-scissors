@@ -89,10 +89,20 @@ function clickGame(value) {
     winner = defineWinner(userInput, computerChoice);
     console.log("Game result " + winner);
 
-    
+
 
 }
 
 
 // funtion to display result of the game
 
+function displayResult(winner, userInput, computerChoice) {
+
+    // highlight choice taken
+
+    // display winer text plus game result
+
+    //count point
+
+    //add game result to the history
+}
