@@ -23,6 +23,8 @@ function textGame() {
         alert("Winner is the "+ winner)
     }
 
+    displayResult(winner, userInput, computerChoice);
+
 
 }
 
@@ -69,6 +71,7 @@ function defineWinner (human,computer) {
         return "computer"
     }
 
+
 }
 
 
@@ -89,7 +92,7 @@ function clickGame(value) {
     winner = defineWinner(userInput, computerChoice);
     console.log("Game result " + winner);
 
-
+    displayResult(winner, userInput, computerChoice);
 
 }
 
@@ -98,11 +101,56 @@ function clickGame(value) {
 
 function displayResult(winner, userInput, computerChoice) {
 
-    // highlight choice taken
+    //clearprevious
+    
+    cleanDisplayResult();
 
-    // display winer text plus game result
+
+
+    // highlight choice taken
+    document.getElementById('humanClick' + userInput.toUpperCase()).style.backgroundColor = 'var(--human-main)';
+    document.getElementById('humanClick' + userInput.toUpperCase()).style.border = '0px';
+
+    document.getElementById('computer' + computerChoice.toUpperCase()).style.backgroundColor = 'var(--computer-main)';
+    document.getElementById('computer' + computerChoice.toUpperCase()).style.border = '0px';
+
+    // display winner text plus game result
+
+    switch (winner) {
+        case 'tie':
+            document.getElementById('result').innerHTML = 'Its a tie!';
+            break;
+
+        case 'human':
+            document.getElementById('result').innerHTML = 'You win';
+            break;
+
+        case 'computer' :
+            document.getElementById('result').innerHTML = 'You loose';
+            break;
+        
+    }
 
     //count point
 
     //add game result to the history
+}
+
+
+//fonction to clean stuff
+function cleanDisplayResult() {
+    document.getElementById('humanClickR').style.backgroundColor = 'white';
+    document.getElementById('humanClickP').style.backgroundColor = 'white';
+    document.getElementById('humanClickS').style.backgroundColor = 'white';
+    document.getElementById('computerR').style.backgroundColor = 'white';
+    document.getElementById('computerP').style.backgroundColor = 'white';
+    document.getElementById('computerS').style.backgroundColor = 'white';
+
+    document.getElementById('humanClickR').style.border  = '1px solid var(--work-black)';
+    document.getElementById('humanClickP').style.border  = '1px solid var(--work-black)';
+    document.getElementById('humanClickS').style.border  = '1px solid var(--work-black)';
+    document.getElementById('computerR').style.border  = '1px solid var(--work-black)';
+    document.getElementById('computerP').style.border  = '1px solid var(--work-black)';
+    document.getElementById('computerS').style.border  = '1px solid var(--work-black)';
+    
 }
