@@ -70,3 +70,29 @@ function defineWinner (human,computer) {
     }
 
 }
+
+
+
+
+
+// get user input for the click game
+
+document.getElementById('humanClickR').addEventListener('click', clickGame.bind(this, "r"));
+document.getElementById('humanClickS').addEventListener('click', clickGame.bind(this, "s"));
+document.getElementById('humanClickP').addEventListener('click', clickGame.bind(this, "p"));
+
+function clickGame(value) {
+    console.log("user clicked " + value);
+    userInput = value;
+    computerChoice = computerInput();
+    
+    winner = defineWinner(userInput, computerChoice);
+    console.log("Game result " + winner);
+
+    
+
+}
+
+
+// funtion to display result of the game
+
