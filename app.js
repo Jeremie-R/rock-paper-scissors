@@ -116,6 +116,13 @@ function displayResult(winner, userInput, computerChoice) {
 
     // display winner text plus game result
 
+    //first let's get the current score
+
+    humanScore = parseInt(document.getElementById('humanScore').innerHTML);
+    computerScore = parseInt(document.getElementById('computerScore').innerHTML);
+
+    console.log(humanScore)
+
     switch (winner) {
         case 'tie':
             document.getElementById('result').innerHTML = 'Its a tie!';
@@ -123,10 +130,19 @@ function displayResult(winner, userInput, computerChoice) {
 
         case 'human':
             document.getElementById('result').innerHTML = 'You win';
+
+            console.log(humanScore + 1)
+
+            document.getElementById('humanScore').innerHTML = humanScore + 1;
+
+
             break;
 
         case 'computer' :
             document.getElementById('result').innerHTML = 'You loose';
+            document.getElementById('computerScore').innerHTML = computerScore + 1
+
+
             break;
         
     }
