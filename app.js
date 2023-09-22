@@ -126,14 +126,15 @@ function displayResult(winner, userInput, computerChoice) {
     switch (winner) {
         case 'tie':
             document.getElementById('result').innerHTML = 'Its a tie!';
+            document.getElementById('historyList').innerHTML += "<p >No winner</p>"
             break;
 
         case 'human':
             document.getElementById('result').innerHTML = 'You win';
 
-            console.log(humanScore + 1)
-
             document.getElementById('humanScore').innerHTML = humanScore + 1;
+
+            document.getElementById('historyList').innerHTML += "<p >Human wins</p>"
 
 
             break;
@@ -141,7 +142,7 @@ function displayResult(winner, userInput, computerChoice) {
         case 'computer' :
             document.getElementById('result').innerHTML = 'You loose';
             document.getElementById('computerScore').innerHTML = computerScore + 1
-
+            document.getElementById('historyList').innerHTML += "<p >Computer wins</p>"
 
             break;
         
