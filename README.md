@@ -1,7 +1,8 @@
 # Rock Paper Scissors
 
-Part of the [Odin project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) 
+![demo](https://jeremie-r.github.io/rock-paper-scissors/demoimage.png)
 
-I have for goal to follow the basic instruction and to then add some design thought to make it nice.
+Learning code and following the [Odin project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) \
+I followed the basic instructions and then added some design to make it nice.
 
 [Web demo](https://jeremie-r.github.io/rock-paper-scissors/)
